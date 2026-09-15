@@ -1,27 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Ваще имба сайт очень крутой</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1 class="main-title">My Website</h1>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
+            <section>
+                <h1 class="main-title">Very Cool Food</h1>
+                <nav>
+                    <ul>
+                        <li><a href="x" class="links-header">О нас</a></li>
+                        <li><a href="x" class="links-header">Собрать ланч</a></li>
+                        <li><a href="x" class="links-header">Заказы</a></li>
+                        <li><a href="#footer" class="links-header">Контакты</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
         <main>
-            <h1>Welcome to my website!</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis quis nisl in laoreet. Pellentesque sed elementum massa, id convallis nunc. Praesent eu enim vitae enim viverra semper malesuada eget nisi. Nulla a posuere nisi, quis eleifend tortor. Nunc quis nunc augue. Phasellus nec massa eget tellus molestie suscipit. Aenean id orci placerat, facilisis tellus in, rutrum neque. Phasellus non iaculis sapien, ac vulputate magna. Etiam a ultrices leo. Curabitur semper metus quis quam posuere, non finibus felis pellentesque. In lobortis, ex id tincidunt gravida, dui nibh feugiat lacus, nec elementum orci purus sit amet justo.
-            </p>
+            <section>
+                <div class="cool-img">
+                    <img src="images/yo.jpg" alt="very cool table with food" height="400">
+                </div>
+                <h2>О нас</h2>
+                <p class="text">
+                    Very Cool Food - это сервис доставки
+                    бизнес-ланчей по Москве. Мы привезём
+                    вам горячую вкусную еду в любую точку
+                    города к назначенному времени.
+                </p>
+            </section>
+            <section>
+                <h2>Преимущества Very Cool Food</h2>
+                <ul class="text">
+                    <li>Свежая еда из ресторанов города с доставкой точно к назначенному времени.</li>
+                    <li>Экономия времени сотрудников без отрыва от рабочих процессов.</li>
+                    <li>Гибкие тарифы и скидки при заказе на всю команду.</li>
+                    <li>Гарантия качества и свежести каждого блюда.</li>
+                    <li>Удобный заказ через сайт или мобильное приложение за пару минут.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Топ-5 популярных блюд</h2>
+                <table>
+                    <tr class="table-caption">
+                        <td></td>
+                        <td>Название</td>
+                        <td>Кол-во заказов в неделю</td>
+                        <td>Цена</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>1</td>
+                        <td>Пицца «Пепперони»</td>
+                        <td>1 240</td>
+                        <td>390</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>2</td>
+                        <td>Хинкали с говядиной</td>
+                        <td>980</td>
+                        <td>290</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>3</td>
+                        <td>Роллы «Филадельфия»</td>
+                        <td>870</td>
+                        <td>420</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>4</td>
+                        <td>Пицца «Мясная»</td>
+                        <td>760</td>
+                        <td>350</td>
+                    </tr>
+                    <tr class="table-text">
+                        <td>5</td>
+                        <td>Хачапури по-аджарски</td>
+                        <td>690</td>
+                        <td>330</td>
+                    </tr>
+                </table>
+            </section>
         </main>
-        <footer>
-            <p>&copy; 2024 My Website</p>
+        <footer id="footer">
+            <p>&copy; 2026 Damir Zhigunov <a href="+70000000000" class="links-footer">+7-000-000-00-00</a></p>
         </footer>
     </body>
 </html>

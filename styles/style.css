@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 0;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+header section {
+    padding: 0 0 0 20px;
+}
+
+header .main-title {
+    text-align: left;
+    font-size: 58px;
+    margin: 0 1px 
+}
+
+header ul {
+    list-style: none;
+    align-items: left;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 0;
+    max-width: 300px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Play", sans-serif;
+}
+
+.play-regular {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play-bold {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+main section {
+    margin: 0 0 0 20px;
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+main li {
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 40px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+main .text {
+    font-size: 26px;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.table-caption {
+    font-weight: bold;
+}
+
+.table-text {
+    font-size: 20px;
+    padding: 10px;
+}
+
+main td {
+    border: 2px solid darkgrey;
+    padding: 5px;
+    text-align: center;
+}
+
+main table {
+    border-collapse: collapse;
+    margin: 0 0 20px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 25px 15px;
+}
+
+.links-header {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.links-footer {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.links-header:hover {
+    color: orange;
+}
+
+.links-footer:hover {
+    color: orangered;
+}
+
+/* .cool-img {
+    text-align: center;
+} */
