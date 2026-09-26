@@ -1,0 +1,78 @@
+main .dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 20px 40px 0;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 35px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.dish:hover {
+    border-color: tomato;
+}
+
+.dish-img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.dish-price {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.dish-name {
+    font-size: 22px;
+    margin-top: 6px;
+}
+
+.dish-weight {
+    color: grey;
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.dish-button {
+    background-color: #f1eee9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dish:hover .dish-button {
+    background-color: tomato;
+    color: white;
+}
+
+/* адаптивность */
+
+@media (max-width: 800px) {
+    main .dishes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    main section h2 {
+        text-align: center;
+    }
+
+    main .dishes {
+        grid-template-columns: 1fr;
+    }
+}

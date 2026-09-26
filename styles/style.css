@@ -4,12 +4,29 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Play", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 header {
     background-color: white;
     color: black;
     padding: 0;
     text-align: left;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 
 header section {
@@ -19,29 +36,19 @@ header section {
 header .main-title {
     text-align: left;
     font-size: 58px;
-    margin: 0 1px 
+    margin: 0 0 20px 0;
 }
 
-header ul {
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     list-style: none;
-    align-items: left;
     padding: 0;
 }
 
 header li {
-    display: inline;
-    padding: 0 20px 0 0;
     max-width: 300px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Play", sans-serif;
 }
 
 .play-regular {
@@ -105,6 +112,7 @@ footer {
     color: white;
     margin: 0;
     padding: 0;
+    flex-shrink: 0;
 }
 
 footer p {
@@ -134,6 +142,52 @@ footer p {
     color: orangered;
 }
 
-/* .cool-img {
-    text-align: center;
-} */
+#active {
+    color: tomato;
+}
+
+.cool-img img {
+    height: 400px;
+}
+
+/* адаптивность */
+
+@media (max-width: 800px) {
+    header nav ul {
+        justify-content: space-between;
+    }
+
+    header .main-title {
+        text-align: center;
+    }
+
+    .cool-img img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-header {
+        font-size: 28px;
+    }
+
+    .cool-img img {
+        width: 100%;
+    }
+
+    .table-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .table-text {
+        font-size: 16px;
+    }
+}
