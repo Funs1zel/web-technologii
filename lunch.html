@@ -104,6 +104,101 @@
                 </div>
             </section>
         </main>
+        <div class="form-container">
+            <form class="order-form" method="POST" action="https://httpbin.org/post">
+                <h1 class="order-title">Сделать заказ</h1>
+
+                <div class="form-columns">
+                    <div class="form-column">
+                        <h2>Ваш заказ</h2>
+                        <div class="field">
+                            <label for="select-soup">Суп</label>
+                            <select id="select-soup" name="soup" required>
+                                <option value="" selected>-- Выберите суп --</option>
+                                <option value="gaspacho">Гаспачо</option>
+                                <option value="mushroom-soup">Грибной суп-пюре</option>
+                                <option value="norwegian-soup">Норвежский суп</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="select-dish">Главное блюдо</label>
+                            <select id="select-dish" name="dish" required>
+                                <option value="" selected>-- Выберите блюдо --</option>
+                                <option value="potato-with-mushrooms">Жаренная картошка с грибами</option>
+                                <option value="lasagna">Лазанья</option>
+                                <option value="chicken-cutlets-with-potato">Котлеты из курицы с картофельным пюре</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="select-drink">Напиток</label>
+                            <select id="select-drink" name="drink" required>
+                                <option value="" selected>-- Выберите напиток --</option>
+                                <option value="orange-juice">Апельсиновый сок</option>
+                                <option value="apple-juice">Яблочный сок</option>
+                                <option value="carrot-juice">Морковный сок</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment" name="comment" spellcheck="true" placeholder="Здравствуйте! ..." maxlength="500"></textarea>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="form-column">
+                        <h2>Ваши данные</h2>
+                        <div class="field">
+                            <label for="order-name">Имя</label>
+                            <input type="text" id="order-name" name="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Адрес электронной почты</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="field field-checkbox">
+                            <input type="checkbox" id="ads-check" name="ads" checked>
+                            <label for="ads-check">Получать информацию о скидках и акциях</label>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone-number">Номер телефона</label>
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                        </div>
+                        <div class="field">
+                            <label for="order-address">Адрес доставки</label>
+                            <input type="text" id="order-address" name="order-address" required>
+                            <p class="cursive-note">Доставка осуществляется только по Москве</p>
+                        </div>
+
+                        <div class="field">
+                            <p class="radio-note">Время доставки</p>
+
+                            <div class="radio-row">
+                                <input type="radio" id="radio1" name="delivery-speed" value="as-fast-as-possible">
+                                <label for="radio1">Как можно быстрее</label>
+                            </div>
+
+                            <div class="radio-row">
+                                <input type="radio" id="radio2" name="delivery-speed" value="at-the-stated-time" checked>
+                                <label for="radio2">К установленному времени</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="delivery-time">Укажите время доставки</label>
+                            <input type="time" id="delivery-time" name="delivery-time" min="07:00" max="23:00" step="300">
+                            <p class="cursive-note">Доступное время доставки с 7:00 до 23:00</p>
+                        </div>
+                        <div class="field button-field">
+                            <button type="reset">Сбросить</button>
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         <footer id="footer">
             <p>&copy; 2026 Damir Zhigunov <a href="tel:+70000000000" class="links-footer">+7-000-000-00-00</a> <a href="mailto:damirzigunov@gmail.com" class="links-footer">damirzigunov@gmail.com</a></p>
         </footer>
